@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Apply a universal box-sizing rule */
+* {
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+/* Body and default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    color: #333;
+    position: relative; /* Needed for positioning of the image */
+}
+
+/* Container for content */
+.container {
+    max-inline-size: 1170px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-block-start: 70px;
+    padding-block-end: 70px;
+    padding-inline-start: 70px;
+    padding-inline-end: 70px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for positioning of the image */
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+/* Image styles */
+.profile-pic {
+    position: absolute;
+    inset-block-start: 20px; /* Adjust as needed */
+    inset-inline-end: 20px; /* Adjust as needed */
+    inline-size: 100px;
+    block-size: auto;
+    border-radius: 50%;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    margin-block-end: 10px;
+    text-align: justify;
+}
+
+/* Responsive design for smaller devices */
+@media (max-inline-size: 768px) {
+    .container {
+        inline-size: 95%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
